@@ -1,0 +1,22 @@
+{
+  "name": "video-surveillance",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#master",
+    "ionic-platform-web-client": "~0.2.1",
+    "ngCordova": "~0.1.23-alpha"
+  },
+  "dependencies": {
+    "ion-md-input": "~1.0.4",
+    "ionic-material": "master",
+    "ngCordova": "~0.1.20-alpha",
+    "robotodraft": "~1.1.0",
+    "moment": "~2.10.6",
+    "SimpleWebRTC": "~1.18.0",
+    "xml2json": "~1.1.1",
+    "Waves": "waves#~0.7.4",
+    "font-awesome": "~4.5.0"
+  },
+  "resolutions": {
+  }
+}

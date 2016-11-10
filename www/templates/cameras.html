@@ -1,0 +1,26 @@
+<ion-view view-title="Cameras">
+
+  <ion-content>
+
+    <div ng-repeat="camera in cameras" class="card card-cameras">
+      <div class="item item-icon-left stable-bg">
+        <i class="icon ion-home balanced"></i>
+        <h2>{{camera.location}}</h2>
+        <p>{{camera.name}}</p>
+      </div>
+
+      <div class="item item-image">
+        <img ng-src="{{camera.snapshot}}" />
+      </div>
+
+      <div class="item button-bar cameras-card-buttons">
+        <button ng-click="viewStream(camera)" class="button button-large button-clear waves-effect waves-button waves-dark icon ion-play"> Live Stream</button>
+
+        <button ng-click="viewHistory(camera)" class="button button-large button-clear waves-effect waves-button waves-dark icon ion-filing"> History</button>
+      </div>
+    </div>
+
+    <button ng-click="recordStream()" class="button button-fab button-fab-bottom-right button-assertive icon ion-camera stable-bg waves-effect waves-button waves-light"></button>
+
+  </ion-content>
+</ion-view>

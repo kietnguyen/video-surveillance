@@ -1,0 +1,34 @@
+<ion-modal-view>
+  <ion-content class="ionic login" style="background: url(img/mountains.jpg);">
+    <div class="hero no-header flat">
+      <div class="content">
+        <div class="ion-ios-videocam icon hero-icon calm-bg"></div>
+        <h1>Video Surveillance</h1>
+      </div>
+    </div>
+
+    <div class="list">
+      <ion-md-input placeholder="Email" highlight-color="balanced" type="email" ng-model="email"></ion-md-input>
+      <ion-md-input placeholder="Password" highlight-color="energized" type="password" ng-model="password"></ion-md-input>
+      <h4 ng-show="inputError" class="input-error-message assertive padding-left padding-right">Incorrect email/password</h4>
+    </div>
+
+    <div class="login-btn-padding padding-left padding-right row">
+      <div class="col col-50">
+        <button class="button button-block button-assertive ink" ng-click="register(email, password)">Register</button>
+      </div>
+
+      <div class="col col-50">
+        <button class="button button-block button-positive ink" ng-click="login(email, password)">Login</button>
+      </div>
+    </div>
+
+    <!--
+    <div class="button-bar">
+      <button ng-click="googlePlusAuth()" class="button button-small button-outline button-assertive light-bg icon-left ion-social-google">Google+</button>
+      <button ng-click="facebookAuth()" class="button button-small button-outline button-positive light-bg icon-left ion-social-facebook">Facebook</button>
+      <button ng-click="twitterAuth()" class="button button-small button-outline button-calm light-bg icon-left ion-social-twitter">Twitter</button>
+    </div>
+    -->
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,11 @@
+{
+  "name": "Video Surveillance",
+    "app_id": "72f3ccbe",
+    "proxies": [{
+      "path": "/api",
+      "proxyUrl": "http://172.88.81.99:16080"
+    }, {
+      "path": "/web",
+      "proxyUrl": "http://192.168.1.2:9000"
+    }]
+}

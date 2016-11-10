@@ -1,0 +1,25 @@
+<ion-modal-view>
+  <form name="itemEdit" novalidate>
+    <ion-header-bar class="bar-positive fix-buttons">
+      <a ng-click="closeFilterModal()" class="button">Close</a>
+      <h1 class="title">Filter</h1>
+      <a ng-click="searchByFilter()" class="button">Search</a>
+    </ion-header-bar>
+
+    <ion-content>
+      <div class="item item-divider">Date Range</div>
+      <ion-radio ng-repeat="dateRange in dateRangeList"
+                 ng-value="dateRange.value"
+                 ng-model="filters.dateRange">
+        {{dateRange.text}}
+      </ion-radio>
+
+      <div class="item item-divider">Event Mode</div>
+      <ion-checkbox ng-repeat="eventType in filters.eventTypes"
+                    checked="eventType.checked"
+                    ng-model="eventType.checked">
+        {{eventType.text}}
+      </ion-checkbox>
+    </ion-content>
+  </form>
+</ion-modal-view>

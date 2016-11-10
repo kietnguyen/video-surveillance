@@ -1,0 +1,25 @@
+<ion-view view-title="{{camera.location}}">
+  <!--
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="right" ng-show="false">
+      <button ng-click="openFilterModal()" class="button button-icon button-clear ion-android-options">
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  -->
+
+  <ion-content>
+    <div ng-repeat="event in events" class="card card-camera">
+      <div class="item item-avatar">
+        <img ng-click="viewEvent(event.recordingtoken)" src="img/icon-play.svg">
+        <h2>{{event.rulename}}</h2>
+        <h3>{{event.ruletime | date : "EEE, MMM d, yyyy h:mm:ss a"}}</h3>
+        <i ng-click="toggleDetail(event)" ng-class="isEventDetailShown(event) ?
+                       'ion-chevron-up' : 'ion-chevron-down'" class="icon icon-accordion"></i>
+        <div ng-show="isEventDetailShown(event)" class="item-accordion item-text-wrap">
+          {{event.eventlist.event.desc}}
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

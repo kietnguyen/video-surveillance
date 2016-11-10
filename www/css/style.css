@@ -1,0 +1,72 @@
+.view-container:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("../img/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.ionic.login .light-bg {
+  background-color: #fff;
+}
+
+.login-btn-padding.padding-left, .login-btn-padding.padding-right {
+  padding: 10px !important;
+}
+
+.input-error-message h4 {
+  margin-bottom: 0;
+}
+
+.cameras-card-buttons {
+  padding: 0;
+}
+
+.card.card-camera {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-clear.button-clear {
+  color: inherit;
+}
+
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item .item-accordion {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.list .item .item-accordion.ng-hide {
+  line-height: 0;
+}
+.list .item .item-accordion.ng-hide-add,
+.list .item .item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.icon-accordion {
+  position: absolute;
+  top: 16px;
+  right: -12px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 1.25em;
+}
